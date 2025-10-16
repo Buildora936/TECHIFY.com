@@ -24,34 +24,94 @@
     <a href="#products" class="btn">Voir les produits</a>
   </section>
 
-  <section id="products" class="products">
-    <h2>Nos produits</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://via.placeholder.com/200" alt="Casque Bluetooth">
-        <h3>Casque Bluetooth</h3>
-        <p>Son HD, autonomie 24h</p>
-        <span>45 $</span>
-        <button>Acheter</button>
-      </div>
+  <section id="products" class="products-section">
+  <h2>Nos Produits Populaires</h2>
+  <div class="product-grid">
 
-      <div class="product">
-        <img src="https://via.placeholder.com/200" alt="Chargeur sans fil">
-        <h3>Chargeur sans fil</h3>
-        <p>Rapide & compact</p>
-        <span>30 $</span>
-        <button>Acheter</button>
-      </div>
-
-      <div class="product">
-        <img src="https://via.placeholder.com/200" alt="Montre connectée">
-        <h3>Montre connectée</h3>
-        <p>Suivi santé & notifications</p>
-        <span>60 $</span>
-        <button>Acheter</button>
-      </div>
+    <!-- Casque Bluetooth -->
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61+R3rTqz1L._AC_SL1500_.jpg" alt="Casque Bluetooth sans fil">
+      <h3>Casque Bluetooth Sans Fil</h3>
+      <p>Confortable, puissant et avec réduction de bruit active.</p>
+      <button>Voir plus</button>
     </div>
-  </section>
+
+    <!-- Chargeur sans fil -->
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61A7kqsO5UL._AC_SL1500_.jpg" alt="Chargeur sans fil rapide">
+      <h3>Chargeur Sans Fil Rapide</h3>
+      <p>Chargez vos appareils facilement et en toute sécurité.</p>
+      <button>Voir plus</button>
+    </div>
+
+    <!-- Montre connectée -->
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71H5H0TDc3L._AC_SL1500_.jpg" alt="Montre connectée intelligente">
+      <h3>Montre Connectée Intelligente</h3>
+      <p>Suivez votre santé et vos performances avec style.</p>
+      <button>Voir plus</button>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.products-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.product-card button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+</style>
 
   <section id="about" class="about">
     <h2>À propos de Techify</h2>
