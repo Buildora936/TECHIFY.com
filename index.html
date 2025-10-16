@@ -28,13 +28,9 @@
   <h2>Nos Produits Populaires</h2>
   <div class="product-grid">
 
-<section id="products" class="products-section">
-  <h2>Nos Produits Populaires</h2>
-  <div class="product-grid">
-
     <!-- Casque Bluetooth -->
     <div class="product-card">
-      <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/bluetooth-headphones-1868612_1280.jpg" alt="Casque Bluetooth sans fil">
+      <img src="https://raw.githubusercontent.com/JosephBrooksTech/assets/main/casque.jpg" alt="Casque Bluetooth sans fil">
       <h3>Casque Bluetooth Sans Fil</h3>
       <p>Confortable, puissant et avec réduction de bruit active.</p>
       <button>Voir plus</button>
@@ -42,7 +38,7 @@
 
     <!-- Chargeur sans fil -->
     <div class="product-card">
-      <img src="https://cdn.pixabay.com/photo/2020/10/10/10/10/wireless-charger-5640021_1280.jpg" alt="Chargeur sans fil rapide">
+      <img src="https://raw.githubusercontent.com/JosephBrooksTech/assets/main/chargeur.jpg" alt="Chargeur sans fil rapide">
       <h3>Chargeur Sans Fil Rapide</h3>
       <p>Chargez vos appareils facilement et en toute sécurité.</p>
       <button>Voir plus</button>
@@ -50,12 +46,74 @@
 
     <!-- Montre connectée -->
     <div class="product-card">
-      <img src="https://cdn.pixabay.com/photo/2019/05/03/12/00/smart-watch-4174638_1280.jpg" alt="Montre connectée intelligente">
+      <img src="https://raw.githubusercontent.com/JosephBrooksTech/assets/main/montre.jpg" alt="Montre connectée intelligente">
       <h3>Montre Connectée Intelligente</h3>
       <p>Suivez votre santé et vos performances avec style.</p>
       <button>Voir plus</button>
     </div>
 
+  </div>
+</section>
+
+<style>
+.products-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.product-card button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+</style>
   </div>
 </section>
 
